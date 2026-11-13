@@ -1,0 +1,18 @@
+{
+  "task": "event_relevance",
+  "source_id": "example_source",
+  "current_text": "当前章节片段或当前事件文本。",
+  "candidate_event": "候选旧时间线事件。",
+  "metadata": {
+    "current_chapter": "001",
+    "candidate_chapter": "000",
+    "shared_characters": [],
+    "time_hints": [],
+    "location_hints": []
+  },
+  "label": "strong_related",
+  "score": 0.8,
+  "confidence": 0.8,
+  "evidence_current": "必须出现在 current_text 里的证据短语",
+  "evidence_candidate": "必须出现在 candidate_event 里的证据短语"
+}

@@ -1,0 +1,30 @@
+{
+  "task": "event_relevance",
+  "labels": [
+    {
+      "name": "not_related",
+      "score": 0.0,
+      "description": "The current text and candidate event are not narratively relevant."
+    },
+    {
+      "name": "weak_related",
+      "score": 0.4,
+      "description": "There is some shared context, but the relation is indirect or weak."
+    },
+    {
+      "name": "strong_related",
+      "score": 0.8,
+      "description": "The current text directly depends on, continues, recalls, updates, or is constrained by the candidate event."
+    },
+    {
+      "name": "same_event",
+      "score": 1.0,
+      "description": "The two texts refer to the same narrative event in different wording."
+    },
+    {
+      "name": "uncertain",
+      "score": null,
+      "description": "The relation cannot be determined from the given inputs alone."
+    }
+  ]
+}

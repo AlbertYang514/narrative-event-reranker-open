@@ -1,0 +1,57 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+
+# Data artifacts: never commit corpora or processed text.
+data/raw/
+data/processed/
+data/normalized/
+data/datasets/
+data/soft_labels/
+data/train_splits/
+data/augmentation/
+data/cache/
+data/quarantine/
+data/local_eval/
+*.jsonl
+*.sqlite
+*.db
+
+# Small synthetic examples are the only JSONL committed.
+!examples/synthetic/*.jsonl
+!configs/*.jsonl
+
+# Public source metadata manifests (no text).
+!data/
+!data/manifests/
+!data/manifests/*.jsonl
+
+# Model weights and exported model artifacts.
+models/*
+!models/.gitkeep
+outputs/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+hf-cache/
+
+# Notebooks and local environments.
+.ipynb_checkpoints/
+notebooks/
+
+# Local teacher experiment artifacts.
+teacher_batch_*.jsonl
+*.labeled*.jsonl
+local_eval_*teacher_batch*.jsonl
+
+# OS/editor junk.
+._*
+*.tar.gz
+*.tgz
+*.zip
